@@ -70,7 +70,7 @@ body {
   font:
     1.6rem/1.25 Arial,
     sans-serif;
-  background-color: #f5f5f5;
+  background-color: #24b817;
   color: #4d4d4d;
 }
 
@@ -83,6 +83,12 @@ body {
 
 /*END RESETS*/
 /* GLOBAL STYLES */
+
+.title-count{
+  
+  text-align: center;
+}
+
 .form-group>input[type="text"] {
   display: inline-block;
   margin-top: 0.4rem;
@@ -90,7 +96,7 @@ body {
 
 .btn {
   padding: 0.8rem 1rem 0.7rem;
-  border: 0.2rem solid #4d4d4d;
+  border: 0.2rem solid #000000;
   cursor: pointer;
   text-transform: capitalize;
 }
@@ -103,12 +109,25 @@ body {
 .btn.toggle-btn[aria-pressed="true"] {
   text-decoration: underline;
   border-color: #4d4d4d;
+  background-color: #00ad09;
 }
 
 .btn__danger {
   color: #fff;
-  background-color: #ca3c3c;
+  background-color: #b11010;
   border-color: #bd2130;
+}
+
+.btn__edit {
+  color: #fff;
+  background-color: #101ab1;
+  border-color: #000000;
+}
+
+.btn__cancel {
+  color: #fff;
+  background-color: #21e5ff;
+  border-color: #000000;
 }
 
 .btn__filter {
@@ -116,8 +135,8 @@ body {
 }
 
 .btn__primary {
-  color: #fff;
-  background-color: #000;
+  color: #000000da;
+  background-color: #f0ff1e;
 }
 
 .btn-group {
@@ -141,6 +160,7 @@ body {
 
 .visually-hidden {
   position: absolute !important;
+  
   height: 1px;
   width: 1px;
   overflow: hidden;
@@ -176,9 +196,21 @@ body {
   margin-top: 1.2rem;
 }
 
+.stack-border {
+  border: 0.2rem solid #000000;
+  padding: 1.4rem;
+  background-color: #ffffff;
+}
+
+.border-list {
+  border: 0.2rem solid #000000;
+  padding: 1.4rem;
+  background-color: #009b0d;
+}
+
 /* END GLOBAL STYLES */
 .todoapp {
-  background: #fff;
+  background: #56da77;
   margin: 2rem 0 4rem 0;
   padding: 1rem;
   position: relative;

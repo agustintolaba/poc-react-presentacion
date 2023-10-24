@@ -44,7 +44,7 @@ export default function Todo(props) {
               ref={editFieldRef}/>
       </div>
       <div className="btn-group">
-        <button type="button" className="btn todo-cancel" onClick={() => setEditing(false)}>
+        <button type="button" className="btn todo-cancel btn__cancel" onClick={() => setEditing(false)}>
           Cancel
           <span className="visually-hidden">renaming {props.name}</span>
         </button>
@@ -57,7 +57,7 @@ export default function Todo(props) {
   );
   
   const viewTemplate = (
-    <div className="stack-small">
+    <div className="stack-small stack-border">
       <div className="c-cb">
         <input
           id={props.id}
@@ -72,7 +72,7 @@ export default function Todo(props) {
       <div className="btn-group">
         <button 
           type="button" 
-          className="btn" 
+          className="btn btn__edit" 
           onClick={() => setEditing(true)}
           ref={editButtonRef}>
           Edit <span className="visually-hidden">{props.name}</span>
